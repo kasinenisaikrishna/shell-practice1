@@ -1,5 +1,9 @@
 #!/bin/bash
 userid=$(id -u)
+r="\e[31m"
+g="\e[32m]"
+y="\e[33m"
+n="\e[0m]"
 
 check_root(){
     if [ $userid -ne 0 ]
@@ -12,10 +16,10 @@ check_root(){
 validate(){ #validate function body
     if [ $1 -ne 0 ]
     then
-        echo "$2 is...FAILED"
+        echo -e "$2 is...$r FAILED $n"
         exit 1
     else
-        echo "$2 is...SUCCESS"
+        echo -e "$2 is...$g SUCCESS $n"
     fi 
 }
 
