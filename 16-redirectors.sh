@@ -15,7 +15,7 @@ n="\e[0m]"
 check_root(){
     if [ $userid -ne 0 ]
     then
-        echo -e "$r please run this script with root access $n" | tee -a $log_file 
+        echo -e "$r please run this script with root access $n" | tee -a $log_file #tee is used to print output on the screen and as well as used to write in log_file
         exit 1 
     fi
 }
