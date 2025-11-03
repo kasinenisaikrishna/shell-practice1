@@ -10,8 +10,7 @@ y="\e[33m"
 n="\e[0m]"
 
 usage(){
-    echo -e "$r usage:: $n sh 19-backup.sh <source> <destination> <days(otional)>"
-    exit 1
+    echo -e "$r usage:: $n sh 19-backup.sh <source> <destination> <days(otional)>"  
 }
 #check the source and destination are provided
 
