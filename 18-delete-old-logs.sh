@@ -1,0 +1,15 @@
+#!/bin/bash
+
+source_dir=/home/ec2-user/logs
+r="\e[31m"
+g="\e[32m]"
+y="\e[33m"
+n="\e[0m]"
+
+if [ -d $source_dir ]
+then
+    echo -e "$source_dir $g exists $n"
+else
+    echo -e "$source_dir $r does not exists $n"
+    exit 1
+fi
