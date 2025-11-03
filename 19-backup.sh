@@ -31,7 +31,9 @@ fi
 
 files=$(find ${source_dir} -name "*.log" -mtime +14)
 
-if [ -n $files ]
+echo "files: $files"
+
+if [ ! -z $files ] #true if files are empty, ! makes it expression false
 then
     echo "files are found"
 else
