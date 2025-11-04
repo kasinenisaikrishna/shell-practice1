@@ -44,7 +44,6 @@ then
     if [ -f $zip_file ] #-f for file and -d for directory
     then
         echo "successfully zipped files older than $days"
-
         #remove the files after zipping
         while IFS= read -r file #IFS, internal field seperator, empty means it will not ignore while spaces. -r is for not to ignore special characters like /
         do
