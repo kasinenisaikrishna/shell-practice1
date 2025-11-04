@@ -44,6 +44,8 @@ then
     if [ -f $zip_file ] #-f for file and -d for directory
     then
         echo "successfully zipped files older than $days"
+    else
+        echo "Zipping the files is failed"
     fi
 else
     echo "no files older than $days"
